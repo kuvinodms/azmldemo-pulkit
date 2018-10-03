@@ -1,0 +1,51 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "virtualMachines_azmldevops_name": {
+            "value": null
+        },
+        "networkInterfaces_azmldevops93_name": {
+            "value": null
+        },
+        "registries_azmldevops_name": {
+            "value": null
+        },
+        "publicIPAddresses_azmldevops_ip_name": {
+            "value": null
+        },
+        "storageAccounts_azmlsdkclirgdiag_name": {
+            "value": null
+        },
+        "virtualNetworks_azmlsdkclirg_vnet_name": {
+            "value": null
+        },
+        "networkSecurityGroups_azmldevops_nsg_name": {
+            "value": null
+        },
+        "subnets_default_name": {
+            "value": null
+        },
+        "securityRules_JupyterHub_name": {
+            "value": null
+        },
+        "securityRules_RStudioServer_name": {
+            "value": null
+        },
+        "securityRules_default_allow_ssh_name": {
+            "value": null
+        },
+        "virtualMachines_azmldevops_id": {
+            "value": null
+        },
+        "virtualMachines_azmldevops_id_1": {
+            "value": null
+        },
+        "virtualNetworks_azmlsdkclirg_vnet_id": {
+            "value": null
+        },
+        "subnets_default_id": {
+            "value": null
+        }
+    }
+}
