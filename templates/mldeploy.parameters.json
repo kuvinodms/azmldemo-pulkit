@@ -3,49 +3,49 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "virtualMachines_azmldevops_name": {
-            "value": null
+            "value": "azmldevops"
         },
         "networkInterfaces_azmldevops93_name": {
-            "value": null
+            "value": "azmldevops93"
         },
         "registries_azmldevops_name": {
-            "value": null
+            "value": "azmldevops"
         },
         "publicIPAddresses_azmldevops_ip_name": {
-            "value": null
+            "value": "azmldevops"
         },
         "storageAccounts_azmlsdkclirgdiag_name": {
-            "value": null
+            "value": "azmlsdkclirgdiag"
         },
         "virtualNetworks_azmlsdkclirg_vnet_name": {
-            "value": null
+            "value": "azmlsdkclirg-vnet"
         },
         "networkSecurityGroups_azmldevops_nsg_name": {
-            "value": null
+            "value": "azmldevops-nsg"
         },
         "subnets_default_name": {
-            "value": null
+            "value": "default"
         },
         "securityRules_JupyterHub_name": {
-            "value": null
+            "value": "JupyterHub"
         },
         "securityRules_RStudioServer_name": {
-            "value": null
+            "value": "RStudioServer"
         },
         "securityRules_default_allow_ssh_name": {
-            "value": null
+            "value":  "default-allow-ssh"
         },
         "virtualMachines_azmldevops_id": {
-            "value": null
+            "value": "/subscriptions/afc11291-9826-46be-b852-70349146ddf8/resourceGroups/azmlsdkclirg/providers/Microsoft.Compute/disks/azmldevops_OsDisk_1_5e38ee73052943148fb4ce4709697ffc"
         },
         "virtualMachines_azmldevops_id_1": {
-            "value": null
+            "value": "/subscriptions/afc11291-9826-46be-b852-70349146ddf8/resourceGroups/azmlsdkclirg/providers/Microsoft.Compute/disks/azmldevops_lun_0_2_ad9fd2cdad554ae89a30b9b81b240254"
         },
         "virtualNetworks_azmlsdkclirg_vnet_id": {
-            "value": null
+            "value": "/subscriptions/afc11291-9826-46be-b852-70349146ddf8/resourceGroups/cleanupservice/providers/Microsoft.Network/networkSecurityGroups/rg-cleanupservice-nsg5"
         },
         "subnets_default_id": {
-            "value": null
+            "value": "/subscriptions/afc11291-9826-46be-b852-70349146ddf8/resourceGroups/cleanupservice/providers/Microsoft.Network/networkSecurityGroups/rg-cleanupservice-nsg5"
         }
     }
 }
