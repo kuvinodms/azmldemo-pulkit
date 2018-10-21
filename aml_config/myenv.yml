@@ -2,11 +2,12 @@ name: project_environment
 dependencies:
 # The python interpreter version.
 - python=3.6.2
-- scikit-learn
-- numpy
+- scikit-learn=0.19.1
+- numpy=1.15.2
+- pandas=0.23.0
 
 - pip:
   # Required packages for AzureML execution, history, and data preparation.
-  - --index-url https://azuremlsdktestpypi.azureedge.net/sdk-release/Preview/E7501C02541B433786111FE8E140CAA1
-  - --extra-index-url https://pypi.python.org/simple
+  - azureml-sdk
   - azureml-defaults
+  - azureml-monitoring
