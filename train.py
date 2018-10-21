@@ -37,6 +37,8 @@ print('Predicted class:', clf2.predict(X_new))
 # Import Run from azureml.core, 
 # and get handle of current run for logging and history purposes
 from azureml.core.run import Run
+from sklearn.externals import joblib
+
 run = Run.get_submitted_run()
 
 model_path = "model.pkl"
@@ -49,3 +51,15 @@ run.upload_file(model_path,  model_path)
 os.remove(model_path)
 
 
+project_root = os.path.join(os.path.dirname(__file__), '../../')
+print('project_root:', project_root)
+# persist model and dataset (version to enable reproducability)
+# files saved in the outputs folder are automatically uploaded with AzureML run
+os.makedirs(os.path.join(project_root, 'outputs'), exist_ok=True)
+filename=os.path.join(project_root, 'outputs/model.pkl')
+# Save model as part of the run history
+with open(filename, "wb") as file:
+    from sklearn.externals import joblib
+    joblib.dump(clf, file)
+
+	
