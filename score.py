@@ -3,7 +3,8 @@ def init():
     from azureml.core.model import Model
 	
     global model
-    model_path = Model.get_model_path('mymodel')
+    model_path = Model.get_model_path('ucimodel')
+    print("model_path: " + model_path)
     model = joblib.load(model_path)
 
 def run(input_df):
