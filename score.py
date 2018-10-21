@@ -3,7 +3,7 @@ def init():
     from azureml.core.model import Model
 	
     global model
-    model_path = Model.get_model_path('mymodel4')
+    model_path = Model.get_model_path('mymodel')
     model = joblib.load(model_path)
 
 def run(input_df):
