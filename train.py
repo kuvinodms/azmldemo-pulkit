@@ -51,7 +51,7 @@ run.upload_file(model_path,  model_path)
 os.remove(model_path)
 
 
-project_root = os.path.join(os.path.dirname(__file__), '../../../')
+project_root = os.path.join(os.path.dirname(__file__), '../')
 print('project_root:', project_root)
 # persist model and dataset (version to enable reproducability)
 # files saved in the outputs folder are automatically uploaded with AzureML run
