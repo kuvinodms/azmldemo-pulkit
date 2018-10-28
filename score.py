@@ -11,9 +11,13 @@ def run(input_df):
     import json
     import pandas as pd
 
-    df = pd.DataFrame.from_dict(input_df, orient='columns')
+    df = pd.DataFrame(json.loads(input_df)["input_df"],columns=['height', 'width', 'shoe_size'])
+    print ("jsoninput2:\n" + df.to_string())
     pred = model.predict(df)
     return json.dumps(str(pred[0]))
+
+    #pred = model.predict(input_df)
+    #return json.dumps(str(pred[0]))
 
 def main():
   from azureml.api.schema.dataTypes import DataTypes
@@ -25,9 +29,11 @@ def main():
 
   # Test the functions' output
   init()
+  input2 = '{"input_df": [{"width": 60, "shoe_size": 38, "height": 190}]}'
   input1 = pandas.DataFrame([[190, 60, 38]])
-  print("Result: " + run(input1))
-  
+  print("input1df:\n" + input1.to_string())
+  print("Result: " + run(input2))
+
   inputs = {"input_df": SampleDefinition(DataTypes.PANDAS, df)}
 
   # Generate the service_schema.json
