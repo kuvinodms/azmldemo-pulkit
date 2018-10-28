@@ -1,7 +1,7 @@
 def init():
     from sklearn.externals import joblib
     from azureml.core.model import Model
-	
+
     global model
     model_path = Model.get_model_path('ucimodel')
     print("model_path: " + model_path)
@@ -9,7 +9,10 @@ def init():
 
 def run(input_df):
     import json
-    pred = model.predict(input_df)
+    import pandas as pd
+
+    df = pd.DataFrame.from_dict(input_df, orient='columns')
+    pred = model.predict(df)
     return json.dumps(str(pred[0]))
 
 def main():
